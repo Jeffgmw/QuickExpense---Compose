@@ -23,13 +23,12 @@ object AppModule {
             TransactionsDB::class.java,
             TransactionsDB.DATABASE_NAME
         ).build()
-
     }
+
 
     @Provides
     @Singleton
     fun providesTransactionRepository(
         db: TransactionsDB,
     ): TransactionRepository = TransactionRepositoryImpl(db.transactionDao)
-
 }

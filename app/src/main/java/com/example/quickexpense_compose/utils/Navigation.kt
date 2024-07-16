@@ -53,7 +53,6 @@ fun SetupNavigation() {
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = navBackStackEntry?.destination?.route
 
-
     Scaffold(
         bottomBar = {
             if (currentRoute == Screens.Dashboard.route || currentRoute == Screens.Transactions.route) {

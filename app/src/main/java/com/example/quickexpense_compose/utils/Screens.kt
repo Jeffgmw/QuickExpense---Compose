@@ -1,6 +1,7 @@
 package com.example.quickexpense_compose.utils
 
 sealed class Screens(val route: String) {
+
     object Dashboard : Screens(route = "dashboard")
     object TransactionDetails : Screens(route = "transaction_details")
     object AddEditTransaction : Screens(route = "add_transaction")
